@@ -46,6 +46,7 @@ The deployment consists of two main components:
 - `HATHORA_REGION`: Automatically set by Hathora, indicates the deployment region
 - `GITHUB_TOKEN`: Your GitHub token with appropriate permissions
 - `GITHUB_ORG`: Your GitHub organization name
+- `ADDITIONAL_LABELS`: Comma-separated list of additional labels to apply to the runner (e.g., "label1,label2,label3"). These will be combined with the default labels: "self-hosted", "linux", and "hathora".
 
 ## Security Considerations
 
