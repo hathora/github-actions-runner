@@ -25,7 +25,7 @@ if [ -n "${ADDITIONAL_LABELS:-}" ]; then
 fi
 
 # Combine default labels with additional labels
-ALL_LABELS=("self-hosted" "linux" "hathora")
+ALL_LABELS=("self-hosted" "linux")
 ALL_LABELS+=("${ADDITIONAL_LABELS_ARRAY[@]}")
 
 # Convert labels array to JSON array
