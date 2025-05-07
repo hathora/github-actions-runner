@@ -31,7 +31,7 @@ RUN apt-get install -y --no-install-recommends \
   fonts-noto-color-emoji \
   ftp \
   g++ \
-  gcc \
+  gcc-12 \
   gnupg2 \
   haveged \
   iproute2 \
@@ -50,6 +50,9 @@ RUN apt-get install -y --no-install-recommends \
   net-tools \
   netcat \
   openssh-client
+
+# Make gcc-12 to default
+RUN update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-12 100
 
 # Install development tools & languages
 RUN apt-get install -y --no-install-recommends \
